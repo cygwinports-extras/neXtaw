@@ -1,0 +1,12 @@
+category: X11
+requires: cygwin xorg-x11-bin-dlls
+external-source: neXtaw
+sdesc: "N*XTSTEP-type Athena widget (runtime)"
+ldesc: "neXtaw is a replacement library for the Athena (libXaw) widget 
+set. It is based on Xaw3d, by Kaleb Keithley and is almost 100% 
+backward compatible with it. Its goal is to try to emulate the look and 
+feel of the N*XTSTEP GUI."
+
+
+
+
