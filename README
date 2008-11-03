@@ -6,22 +6,25 @@ compatible with it. Its goal is to try to emulate the look and feel of
 the N*XTSTEP GUI.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  xorg-x11-bin-dlls-6.8.2.0-1
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-1
+  libXext6-1.0.4-1
+  libXmu6-1.0.4-1
+  libXt6-1.0.5-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  bison-2.1-1
-  flex-2.5.4a-4
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
-  sed-4.1.4-1
+  autoconf2.5-2.63-1
+  automake1.5-1.5-3
+  binutils-20080624-2
+  bison-2.3-1
+  cygport-0.4.2-1
+  flex-2.5.35-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://siag.nu/neXtaw/
@@ -36,17 +39,30 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./neXtaw-0.15.1-X.sh all
+  cygport ./neXtaw-0.15.1-X.cygport all
 
 This will create:
+  /usr/src/libneXtaw-devel-0.15.1-X.tar.bz2
   /usr/src/libneXtaw0-0.15.1-X.tar.bz2
   /usr/src/neXtaw-0.15.1-X-src.tar.bz2
   /usr/src/neXtaw-0.15.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the neXtaw package:
+Files included in the binary packages:
 
+(libneXtaw0)
+  /usr/bin/cygneXtaw-0.dll
+  /usr/share/doc/neXtaw-0.15.1/AUTHORS
+  /usr/share/doc/neXtaw-0.15.1/ChangeLog
+  /usr/share/doc/neXtaw-0.15.1/COPYING
+  /usr/share/doc/neXtaw-0.15.1/FAQ
+  /usr/share/doc/neXtaw-0.15.1/INSTALL
+  /usr/share/doc/neXtaw-0.15.1/NEWS
+  /usr/share/doc/neXtaw-0.15.1/README
+  /usr/share/doc/neXtaw-0.15.1/README.XAW3D
+
+(libneXtaw-devel)
   /usr/include/X11/neXtaw/AllWidgets.h
   /usr/include/X11/neXtaw/AsciiSink.h
   /usr/include/X11/neXtaw/AsciiSinkP.h
@@ -128,55 +144,16 @@ Files included in the neXtaw package:
   /usr/include/X11/neXtaw/XawImP.h
   /usr/include/X11/neXtaw/XawInit.h
   /usr/include/X11/neXtaw/XawVersion.h
+  /usr/lib/libneXtaw.a
   /usr/lib/libneXtaw.dll.a
   /usr/lib/libneXtaw.la
-  /usr/share/doc/Cygwin/neXtaw-0.15.1.README
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/00-README
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Bitmap
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Bitmap-color
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Editres
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Editres-color
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Emacs
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Fig
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Ghostview
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/GXditview
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XCalc
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XClipboard
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XClock
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XConsole
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xdefaults
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xedit
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xfd
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XFontSel
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xgc
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XGrab
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XLoad
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xloadimage
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xmag
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xman
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xmessage
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xmh
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XPaint
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/XTerm
-  /usr/share/doc/neXtaw-0.15.1/app-defaults/Xvidtune
-  /usr/share/doc/neXtaw-0.15.1/AUTHORS
-  /usr/share/doc/neXtaw-0.15.1/ChangeLog
-  /usr/share/doc/neXtaw-0.15.1/CHANGES
-  /usr/share/doc/neXtaw-0.15.1/COPYING
-  /usr/share/doc/neXtaw-0.15.1/FAQ
-  /usr/share/doc/neXtaw-0.15.1/INSTALL
-  /usr/share/doc/neXtaw-0.15.1/NEWS
-  /usr/share/doc/neXtaw-0.15.1/README
-  /usr/share/doc/neXtaw-0.15.1/README.XAW3D
-  /usr/share/doc/neXtaw-0.15.1/TODO
-
-Files included in the libneXtaw0 package:
-
-  /usr/bin/cygneXtaw-0.dll
 
 ------------------
 
 Port Notes:
+
+----- version 0.15.1-3 -----
+Rebuilt for modular X11.
 
 ----- version 0.15.1-2 -----
 Rebuilt with prefix=/usr and current toolchain.

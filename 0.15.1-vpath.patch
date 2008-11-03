@@ -1,0 +1,17 @@
+--- origsrc/neXtaw-0.15.1/X11/neXtaw/Makefile.am	2003-09-19 05:22:05.000000000 -0500
++++ src/neXtaw-0.15.1/X11/neXtaw/Makefile.am	2008-11-03 12:29:38.927494100 -0600
+@@ -41,12 +41,12 @@
+ 	laygram.y laylex.l
+ 
+ laygram.c : laygram.y
+-	$(YACC) -d laygram.y
++	$(YACC) -d $<
+ 	sed 's/yy/LayYY/g' y.tab.c > laygram.c
+ 	sed 's/yy/LayYY/g' y.tab.h > laygram.h
+ 	$(RM) y.tab.c y.tab.h
+ 
+ laylex.c : laylex.l
+-	$(LEX) laylex.l
++	$(LEX) $<
+ 	sed 's/yy/LayYY/g' lex.yy.c > laylex.c
+ 	$(RM) lex.yy.c
