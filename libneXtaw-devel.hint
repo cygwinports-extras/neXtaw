@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libneXtaw0 libX11-devel libXext-devel libXmu-devel libXt-devel
+requires: libneXtaw0 libX11-devel libXext-devel libXmu-devel libXt-devel
 external-source: neXtaw
 sdesc: "N*XTSTEP-type Athena widgets (development)"
 ldesc: "neXtaw is a replacement library for the Athena (libXaw) widget 
