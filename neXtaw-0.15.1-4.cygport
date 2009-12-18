@@ -5,7 +5,6 @@ PATCH_URI="0.15.1-no-undefined.patch
            0.15.1-vpath.patch"
 
 PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
-neXtaw_CONTENTS=	# empty
 libneXtaw0_CONTENTS="usr/bin/cygneXtaw-0.dll usr/share/doc/"
 libneXtaw_devel_CONTENTS="usr/include/ usr/lib/"
 

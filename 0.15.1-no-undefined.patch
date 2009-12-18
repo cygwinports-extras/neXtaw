@@ -1,12 +1,11 @@
 --- origsrc/neXtaw-0.15.1/X11/neXtaw/Makefile.am	2003-09-19 05:22:05.000000000 -0500
 +++ src/neXtaw-0.15.1/X11/neXtaw/Makefile.am	2008-11-03 12:29:38.927494100 -0600
-@@ -30,7 +30,9 @@
+@@ -30,7 +30,8 @@
  	Tree.h TreeP.h VendorEP.h Viewport.h ViewportP.h \
  	XawAlloc.h XawI18n.h XawImP.h XawInit.h XawVersion.h laygram.h
  
 -libneXtaw_la_LDFLAGS = -version-info 15:1:15
 +libneXtaw_la_LDFLAGS = -version-info 15:1:15 -no-undefined
-+
 +libneXtaw_la_LIBADD = -lXmu -lXt -lXext -lX11
  
  INCLUDES = -DUSEGRAY -DNO_MENU_LINES \

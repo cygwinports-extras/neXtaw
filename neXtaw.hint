@@ -1,5 +1,4 @@
-category: _source
-requires: libneXtaw-devel
+category: X11
 sdesc: "N*XTSTEP-type Athena widgets (source)"
 ldesc: "neXtaw is a replacement library for the Athena (libXaw) widget 
 set. It is based on Xaw3d, by Kaleb Keithley and is almost 100% 
